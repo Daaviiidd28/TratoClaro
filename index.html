@@ -464,7 +464,7 @@
     const c = document.getElementById("f-car").value || "";
     const m = document.getElementById("f-msg").value || "";
     const body = `Nombre: ${n}%0D%0ACoche: ${c}%0D%0A%0D%0A${encodeURIComponent(m)}`;
-    window.location.href = `mailto:contacto@tratoclaro.es?subject=${encodeURIComponent("Quiero vender mi coche")}&body=${body}`;
+    window.location.href = `mailto:contacto@tratoclaro.es ?subject=${encodeURIComponent("Quiero vender mi coche")}&body=${body}`;
   });
 
   document.getElementById("year").textContent = new Date().getFullYear();
