@@ -209,6 +209,8 @@
   .field input:focus, .field textarea:focus { outline: 3px solid var(--amber); outline-offset: 1px; border-color: transparent; }
   .form .btn-primary { background: var(--amber); color: var(--petrol-deep); width: 100%; justify-content: center; }
   .form .btn-primary:hover { background: #f1b357; }
+  .form-hint { margin: 10px 0 0; font-size: 12.5px; color: color-mix(in srgb, var(--white) 65%, transparent); text-align: center; }
+  .form-hint a { color: var(--amber-soft); text-decoration: underline; }
 
   footer { padding: 40px 0 56px; }
   .foot-grid { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; align-items: flex-start; }
@@ -233,6 +235,7 @@
       <a href="#quien">Quién soy</a>
       <a href="#como">Cómo funciona</a>
       <a href="#porque">Por qué yo</a>
+      <a href="catalogo.html">Catálogo</a>
       <a href="#contacto" class="btn btn-primary">Vender mi coche</a>
     </nav>
   </div>
@@ -294,9 +297,9 @@
       <div class="reveal">
         <p class="eyebrow">Quién soy</p>
         <h2>Hola, soy David Nieto Moreno.</h2>
-        <p>Ayudo a particulares de Madrid a vender su coche sin perder tiempo ni regalar dinero. Me ocupo de lo pesado —las fotos, los anuncios, atender a curiosos, enseñar el coche y todo el cambio de nombre— mientras tú sigues con tu vida. Tu coche se queda contigo hasta que se vende, y el precio lo marcas tú.</p>
+        <p>Ayudo a particulares de Madrid a vender su coche sin perder tiempo ni regalar dinero. Me ocupo de lo pesado: las fotos, los anuncios, atender a curiosos, enseñar el coche y todo el cambio de nombre, mientras tú sigues con tu vida. Tu coche se queda contigo hasta que se vende, y el precio lo marcas tú.</p>
         <p>No soy un concesionario: no compro tu coche para revenderlo ni te escondo cuánto me llevo. Trabajo con una comisión clara que pagas solo si vendo. Así de simple.</p>
-        <p class="sign">— David</p>
+        <p class="sign">David</p>
       </div>
     </div>
   </section>
@@ -390,28 +393,32 @@
             <span class="ic">T</span>
             <span class="meta"><span class="t">Teléfono</span><span class="d">611 06 68 20</span></span>
           </a>
-          <a class="channel" href="mailto:hola@tudominio.es">
+          <a class="channel" href="mailto:contacto@tratoclaro.es">
             <span class="ic">@</span>
-            <span class="meta"><span class="t">Email</span><span class="d">[hola@tudominio.es]</span></span>
+            <span class="meta"><span class="t">Email</span><span class="d">contacto@tratoclaro.es</span></span>
           </a>
         </div>
       </div>
 
-      <div class="form reveal">
+      <form class="form reveal" action="https://formsubmit.co/contacto@tratoclaro.es" method="POST">
+        <input type="hidden" name="_subject" value="Quiero vender mi coche (formulario web)" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
         <div class="field">
           <label for="f-name">Tu nombre</label>
-          <input id="f-name" type="text" placeholder="Cómo te llamas" />
+          <input id="f-name" name="Nombre" type="text" placeholder="Cómo te llamas" required />
         </div>
         <div class="field">
           <label for="f-car">Tu coche</label>
-          <input id="f-car" type="text" placeholder="Marca, modelo, año y kilómetros" />
+          <input id="f-car" name="Coche" type="text" placeholder="Marca, modelo, año y kilómetros" required />
         </div>
         <div class="field">
           <label for="f-msg">Mensaje</label>
-          <textarea id="f-msg" rows="3" placeholder="Lo que quieras contarme"></textarea>
+          <textarea id="f-msg" name="Mensaje" rows="3" placeholder="Lo que quieras contarme"></textarea>
         </div>
-        <a class="btn btn-primary" id="sendBtn" href="#">Enviar por email</a>
-      </div>
+        <button type="submit" class="btn btn-primary">Enviar por email</button>
+        <p class="form-hint">Te llega directo a mi correo. Si prefieres, también puedes escribirme por <a href="https://wa.me/34611066820" target="_blank" rel="noopener">WhatsApp</a>.</p>
+      </form>
     </div>
   </section>
 </main>
@@ -457,15 +464,6 @@
   }
   range.addEventListener("input", update);
   update();
-
-  document.getElementById("sendBtn").addEventListener("click", e => {
-    e.preventDefault();
-    const n = document.getElementById("f-name").value || "";
-    const c = document.getElementById("f-car").value || "";
-    const m = document.getElementById("f-msg").value || "";
-    const body = `Nombre: ${n}%0D%0ACoche: ${c}%0D%0A%0D%0A${encodeURIComponent(m)}`;
-    window.location.href = `mailto:contacto@tratoclaro.es ?subject=${encodeURIComponent("Quiero vender mi coche")}&body=${body}`;
-  });
 
   document.getElementById("year").textContent = new Date().getFullYear();
 
