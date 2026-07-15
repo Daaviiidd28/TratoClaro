@@ -1,16 +1,17 @@
-SUBIR LA WEB ENTERA
-=====================
+SOLO CAMBIA EL FAVICON (el resto ya estaba bien)
+==================================================
 
-Esta vez el logo es tu logo ORIGINAL de verdad (el swoosh del
-coche con "TC"), todo en blanco. Nada de logos generados por IA.
+El logo de la cabecera se queda igual (el swoosh completo que
+ya estaba bien). Lo unico que cambia es el favicon: ahora es
+SOLO el monograma "TC" que me pasaste, sin el coche ni el texto.
 
-Mismo procedimiento de siempre:
+Sube la web entera igual que las veces anteriores:
 1. Descomprime este ZIP
-2. GitHub -> "Add file" -> "Upload files"
-3. Entra en la carpeta descomprimida, Ctrl+A, arrastra TODO a GitHub
+2. GitHub -> Add file -> Upload files
+3. Entra en la carpeta, Ctrl+A, arrastra todo a GitHub
 4. Commit changes
 5. Espera 2 minutos
 
 COMPROBAR
 ---------
-tratoclaro.es -> arriba a la izquierda debe verse tu logo real, en blanco
+tratoclaro.es/img/favicon-32.png -> debe verse SOLO la "TC", nada mas
