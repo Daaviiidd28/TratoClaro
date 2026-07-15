@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Renault de segunda mano en Madrid | TratoClaro</title>
+<meta name="description" content="Renault de segunda mano en venta en Madrid. 2 coches disponibles con precio del vendedor y comisión transparente. Se acepta prueba mecánica.">
+<link rel="canonical" href="https://tratoclaro.es/marcas/renault/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Renault de segunda mano en Madrid | TratoClaro">
+<meta property="og:description" content="Renault de segunda mano en venta en Madrid. 2 coches disponibles con precio del vendedor y comisión transparente. Se acepta prueba mecánica.">
+<meta property="og:url" content="https://tratoclaro.es/marcas/renault/">
+<meta property="og:image" content="https://tratoclaro.es/img/og.jpg">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="TratoClaro">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../../img/favicon-48.png">
+<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#000;--ink:#0A0A0B;--coal:#131316;--smoke:#1C1C20;
+  --white:#fff;--mist:rgba(255,255,255,.64);--faint:rgba(255,255,255,.36);
+  --line:rgba(255,255,255,.10);--green:#00B050;--green-hi:#2BE07A;--r:20px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--black);color:var(--white);font-family:'Archivo',system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+::selection{background:var(--green);color:#000}
+.d1{font-weight:900;letter-spacing:-.045em;line-height:.9;text-transform:uppercase}
+.d2{font-weight:800;letter-spacing:-.035em;line-height:.97}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--green);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:'';width:28px;height:1px;background:var(--green)}
+.wrap{max-width:1300px;margin:0 auto;padding:0 clamp(20px,4vw,56px)}
+section{position:relative;padding:clamp(96px,12vh,168px) 0}
+
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:90;display:flex;align-items:center;justify-content:space-between;padding:18px clamp(20px,4vw,56px);transition:all .5s;border-bottom:1px solid transparent}
+.nav.on{background:rgba(0,0,0,.6);backdrop-filter:blur(20px) saturate(140%);-webkit-backdrop-filter:blur(20px) saturate(140%);border-bottom-color:var(--line);padding-top:12px;padding-bottom:12px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand span{font-weight:800;letter-spacing:.13em;font-size:.86rem;text-transform:uppercase;color:#fff}
+@media(max-width:720px){.brand span{font-size:.72rem}}
+.brand img{height:30px;width:auto}
+
+.nav-r{display:flex;align-items:center;gap:28px}
+.nav-r a:not(.pill){font-size:.82rem;color:var(--mist);transition:color .3s}
+.nav-r a:not(.pill):hover{color:#fff}
+.pill{background:var(--green);color:#000;font-weight:700;font-size:.8rem;padding:11px 22px;border-radius:999px;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}
+.pill:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,176,80,.4)}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:6px;z-index:95}
+.burger i{display:block;width:24px;height:2px;background:#fff;margin:5px 0;transition:.35s}
+.burger.x i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.x i:nth-child(2){opacity:0}
+.burger.x i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* hero */
+.hero{height:100svh;min-height:600px;padding:0;display:grid;place-items:center;overflow:hidden}
+.hero-media{position:absolute;inset:0}
+.hero-media video{width:100%;height:100%;object-fit:cover}
+.hero-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.74) 0%,rgba(0,0,0,.3) 34%,rgba(0,0,0,.6) 72%,var(--black) 100%),radial-gradient(ellipse 80% 60% at 50% 50%,transparent 40%,rgba(0,0,0,.6) 100%)}
+.hero-in{position:relative;z-index:2;text-align:center;width:100%;padding:0 20px;will-change:transform,opacity}
+.hero h1{font-size:clamp(2.6rem,8.6vw,8.6rem);margin-bottom:24px}
+.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:top}
+.hero h1 .w b{display:inline-block;font-weight:900;will-change:transform}
+.hero h1 .dot{color:var(--green)}
+.hero-sub{max-width:33rem;margin:0 auto 36px;color:var(--mist);font-size:clamp(.95rem,1.5vw,1.1rem)}
+.hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 32px;border-radius:999px;font-weight:700;font-size:.92rem;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,background .35s,border-color .35s,color .35s}
+.btn-g{background:var(--green);color:#000}
+.btn-g:hover{transform:translateY(-3px);box-shadow:0 16px 44px rgba(0,176,80,.42)}
+.btn-o{border:1px solid rgba(255,255,255,.28);color:#fff;background:rgba(255,255,255,.04);backdrop-filter:blur(8px)}
+.btn-o:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.5);transform:translateY(-3px)}
+.scroll-cue{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);z-index:2;font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--faint);display:flex;flex-direction:column;align-items:center;gap:12px}
+.scroll-cue::after{content:'';width:1px;height:42px;background:linear-gradient(var(--green),transparent);animation:cue 2s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ===== CALCULADORA (pieza central) ===== */
+.calc-sec{border-bottom:1px solid var(--line)}
+.calc-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(40px,6vw,88px);align-items:center}
+.calc-sec h2{font-size:clamp(2.1rem,4.6vw,4.2rem);margin:22px 0 24px;max-width:13ch}
+.calc-sec h2 em{font-style:normal;color:var(--green)}
+.calc-sec .lead{color:var(--mist);max-width:30rem;margin-bottom:30px}
+.pts{display:flex;flex-direction:column;gap:14px}
+.pts li{list-style:none;display:flex;gap:12px;align-items:flex-start;color:var(--mist);font-size:.94rem}
+.pts svg{flex:0 0 18px;margin-top:4px;color:var(--green)}
+.calc{
+  position:relative;border-radius:var(--r);padding:36px 34px 30px;
+  background:linear-gradient(155deg,rgba(255,255,255,.07),rgba(255,255,255,.02) 55%,transparent);
+  border:1px solid var(--line);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  box-shadow:0 40px 90px rgba(0,0,0,.7);
+}
+.calc::before{content:'';position:absolute;top:0;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,var(--green),transparent)}
+.calc-k{font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--faint);margin-bottom:10px}
+.calc-price{display:flex;align-items:baseline;gap:10px;margin-bottom:24px}
+.calc-price input{
+  background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.16);
+  color:#fff;font-family:'Archivo',sans-serif;font-weight:900;letter-spacing:-.04em;
+  font-size:clamp(2.4rem,4vw,3.4rem);width:100%;max-width:260px;padding-bottom:6px;
+  transition:border-color .3s;font-variant-numeric:tabular-nums;
+}
+.calc-price input:focus{outline:none;border-bottom-color:var(--green)}
+.calc-price .eur{font-size:clamp(1.6rem,2.6vw,2.2rem);font-weight:800;color:var(--faint)}
+.calc input[type=range]{
+  width:100%;appearance:none;-webkit-appearance:none;height:3px;border-radius:3px;cursor:pointer;outline:none;
+  background:linear-gradient(90deg,var(--green) var(--f,6%),rgba(255,255,255,.13) var(--f,6%));margin-bottom:30px;
+}
+.calc input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;appearance:none;width:22px;height:22px;border-radius:50%;
+  background:var(--green);border:4px solid #000;cursor:grab;
+  box-shadow:0 0 0 1px var(--green),0 0 20px rgba(0,176,80,.6);transition:transform .2s;
+}
+.calc input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.16)}
+.calc input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--green);border:4px solid #000;cursor:grab;box-shadow:0 0 0 1px var(--green)}
+.row{display:flex;justify-content:space-between;align-items:baseline;padding:15px 2px;border-bottom:1px solid rgba(255,255,255,.07)}
+.row .k{font-size:.86rem;color:var(--mist)}
+.row .v{font-weight:900;letter-spacing:-.03em;font-size:1.5rem;font-variant-numeric:tabular-nums}
+.row.you .v{color:var(--green);font-size:2rem}
+.share{
+  margin:20px 0 6px;font-family:'JetBrains Mono',monospace;font-size:.82rem;
+  color:var(--green);font-variant-numeric:tabular-nums;
+}
+.calc-note{font-size:.74rem;color:var(--faint);line-height:1.6}
+.calc-note b{color:var(--mist);font-weight:600}
+.calc .btn{width:100%;margin-top:22px}
+
+/* tasador */
+.tas{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:44px;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--ink)}
+.tas-form{padding:38px 36px;display:flex;flex-direction:column;gap:24px;border-right:1px solid var(--line)}
+.f{display:flex;flex-direction:column;gap:9px}
+.f>span{font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--faint)}
+.f small{font-size:.72rem;color:rgba(255,255,255,.3);line-height:1.5}
+.f small.warn{
+  color:#E8A33D;background:rgba(232,163,61,.09);border:1px solid rgba(232,163,61,.28);
+  border-radius:9px;padding:9px 11px;line-height:1.5;
+}
+
+.fi{position:relative;display:flex;align-items:center}
+.fi input{
+  width:100%;background:var(--coal);border:1px solid var(--line);border-radius:12px;
+  padding:14px 46px 14px 16px;color:#fff;font-family:'Archivo',sans-serif;font-weight:700;
+  font-size:1.1rem;font-variant-numeric:tabular-nums;transition:border-color .3s;
+}
+.fi input:focus{outline:none;border-color:var(--green)}
+.fi select{
+  width:100%;background:var(--coal);border:1px solid var(--line);border-radius:12px;
+  padding:14px 40px 14px 16px;color:#fff;font-family:'Archivo',sans-serif;font-weight:700;
+  font-size:1.02rem;cursor:pointer;transition:border-color .3s;
+  appearance:none;-webkit-appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2300B050' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 16px center;
+}
+.fi select:focus{outline:none;border-color:var(--green)}
+.fi select option{background:var(--coal);color:#fff}
+.fi i{position:absolute;right:16px;font-style:normal;font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--faint)}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg button{
+  flex:1;min-width:88px;background:var(--coal);border:1px solid var(--line);border-radius:10px;
+  padding:11px 12px;color:var(--mist);font-family:'Archivo',sans-serif;font-size:.84rem;font-weight:600;
+  cursor:pointer;transition:.3s;
+}
+.seg button:hover{border-color:rgba(0,176,80,.5);color:#fff}
+.seg button.on{background:var(--green);border-color:var(--green);color:#000;font-weight:700}
+.tas-out{padding:38px 36px;display:flex;flex-direction:column;background:linear-gradient(160deg,rgba(0,176,80,.07),transparent 55%)}
+.tas-range{font-weight:900;font-size:clamp(1.7rem,3vw,2.5rem);letter-spacing:-.035em;color:var(--green);margin:6px 0 8px;font-variant-numeric:tabular-nums}
+.tas-mid{font-size:.86rem;color:var(--mist);margin-bottom:18px}
+.tas-mid b{color:#fff;font-weight:700}
+.tas-bar{height:6px;border-radius:99px;background:rgba(255,255,255,.08);overflow:hidden;margin-bottom:22px}
+.tas-bar span{display:block;height:100%;width:0%;border-radius:99px;background:linear-gradient(90deg,var(--green),var(--green-hi));box-shadow:0 0 16px rgba(0,176,80,.6);transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.tas-rows{margin-bottom:20px}
+.tas-out .btn{width:100%;margin-bottom:16px}
+.tas-note{font-size:.72rem;color:var(--faint);line-height:1.6;margin-top:auto}
+.tas-note b{color:var(--mist);font-weight:600}
+
+
+/* catálogo */
+.cat{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.cc{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--ink);display:flex;flex-direction:column;transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .5s}
+.cc:hover{transform:translateY(-8px);border-color:rgba(0,176,80,.45)}
+.cc-img{position:relative;aspect-ratio:16/10;overflow:hidden;background:linear-gradient(150deg,#1c1c20,#0c0c0e);display:grid;place-items:center}
+.cc-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.16,1,.3,1);z-index:1}
+.cc:hover .cc-img img{transform:scale(1.06)}
+.cc-ph{color:rgba(255,255,255,.12)}
+.cc-badge{
+  position:absolute;top:16px;left:16px;z-index:2;background:var(--green);color:#000;
+  font-family:'JetBrains Mono',monospace;font-size:.62rem;font-weight:500;letter-spacing:.16em;
+  text-transform:uppercase;padding:6px 12px;border-radius:99px;
+}
+.cc-b{padding:26px 26px 24px;display:flex;flex-direction:column;flex:1}
+.cc-b h3{font-size:1.45rem;font-weight:800;letter-spacing:-.025em;margin-bottom:8px}
+.cc-sub{color:var(--mist);font-size:.86rem;margin-bottom:22px}
+.cc-specs{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px 10px;padding:18px 0;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:22px}
+.cc-specs li{display:flex;flex-direction:column;gap:3px}
+.cc-specs i{font-style:normal;font-family:'JetBrains Mono',monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+.cc-specs b{font-weight:700;font-size:.98rem}
+.cc-foot{margin-top:auto;display:flex;flex-direction:column;gap:16px}
+.cc-price{font-weight:900;font-size:2.1rem;letter-spacing:-.035em;color:var(--green)}
+.cc-btns{display:flex;gap:10px}
+.cc-btns .btn{flex:1;padding:13px 18px;font-size:.85rem}
+@media(max-width:1200px){.cat{grid-template-columns:1fr 1fr}}
+@media(max-width:820px){.cat{grid-template-columns:1fr}}
+
+/* ejemplos */
+.ex{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:48px}
+.exc{
+  border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--ink);
+  transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .5s;
+}
+.exc:hover{transform:translateY(-8px);border-color:rgba(0,176,80,.45)}
+.exc-img{
+  position:relative;aspect-ratio:16/10;overflow:hidden;
+  background:linear-gradient(150deg,#1c1c20,#0c0c0e);display:grid;place-items:center;
+}
+.exc-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(.4) brightness(.85);transition:transform 1s cubic-bezier(.16,1,.3,1),filter .6s;z-index:1}
+.exc:hover .exc-img img{transform:scale(1.07);filter:grayscale(0) brightness(1)}
+.exc-ph{color:rgba(255,255,255,.14)}
+
+.exc-b{padding:22px 24px 24px}
+.exc-m{display:block;font-weight:800;font-size:1.06rem;letter-spacing:-.02em;margin-bottom:3px}
+.exc-t{display:block;font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-bottom:14px}
+.exc-p{display:block;font-weight:900;font-size:1.6rem;letter-spacing:-.035em;margin-bottom:18px}
+.exc-split{display:flex;gap:10px;border-top:1px solid rgba(255,255,255,.08);padding-top:16px}
+.exc-split span{flex:1;display:flex;flex-direction:column;gap:3px}
+.exc-split i{font-style:normal;font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+.exc-split b{font-weight:900;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.exc-split .you b{color:var(--green);font-size:1.3rem}
+.exc-split .fee{text-align:right;align-items:flex-end}
+.exc-split .fee b{color:var(--mist);font-size:1.05rem;font-weight:700}
+
+/* servicios */
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:52px}
+.blk{position:relative;overflow:hidden;border-radius:var(--r);border:1px solid var(--line);background:var(--ink);padding:40px 32px 34px;min-height:360px;display:flex;flex-direction:column;justify-content:flex-end;transition:border-color .5s,transform .5s cubic-bezier(.2,.8,.2,1)}
+.blk::before{content:'';position:absolute;inset:0;opacity:0;transition:opacity .55s;background:radial-gradient(ellipse 90% 70% at 50% 115%,rgba(0,176,80,.22),transparent 62%)}
+.blk:hover{transform:translateY(-8px);border-color:rgba(0,176,80,.45)}
+.blk:hover::before{opacity:1}
+.blk .ic{position:relative;width:50px;height:50px;border-radius:14px;margin-bottom:auto;border:1px solid var(--line);display:grid;place-items:center;color:var(--green);background:rgba(0,176,80,.06);transition:transform .55s cubic-bezier(.2,.8,.2,1)}
+.blk:hover .ic{transform:scale(1.08) rotate(-4deg)}
+.blk h3{position:relative;font-size:1.55rem;font-weight:800;letter-spacing:-.02em;margin:26px 0 12px}
+.blk p{position:relative;color:var(--mist);font-size:.92rem}
+
+/* quién soy */
+.me{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(40px,6vw,80px);align-items:center}
+.me-photo{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;border:1px solid var(--line);background:var(--coal)}
+.me-photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.08);transition:filter .8s}
+.me-photo:hover img{filter:grayscale(0) contrast(1)}
+.me-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(200deg,transparent 50%,rgba(0,0,0,.82))}
+.me-photo .cap{position:absolute;bottom:22px;left:24px;z-index:2;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green)}
+.me h2{font-size:clamp(1.9rem,4vw,3.4rem);margin:20px 0 22px;max-width:15ch}
+.me p{color:var(--mist);margin-bottom:18px;max-width:36rem}
+.me p b{color:#fff;font-weight:700}
+.sig{font-weight:900;font-size:1.4rem;letter-spacing:-.03em;color:var(--green);margin-top:8px}
+
+/* raíl proceso */
+.rail{position:relative;margin-top:60px;padding-left:74px}
+.rail .track{position:absolute;left:26px;top:14px;bottom:14px;width:2px;background:var(--line);border-radius:2px;overflow:hidden}
+.rail .fill{position:absolute;inset:0 0 auto 0;height:0%;background:linear-gradient(180deg,var(--green-hi),var(--green));box-shadow:0 0 22px rgba(0,176,80,.7)}
+.step{position:relative;padding:22px 0 42px;will-change:transform,opacity}
+.step:last-child{padding-bottom:0}
+.step .dot{position:absolute;left:-57px;top:26px;width:16px;height:16px;border-radius:50%;background:#000;border:2px solid var(--smoke);transition:border-color .45s,box-shadow .45s,transform .45s}
+.step.hit .dot{border-color:var(--green);box-shadow:0 0 0 6px rgba(0,176,80,.14);transform:scale(1.15)}
+.step .no{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.2em;color:var(--faint);transition:color .45s}
+.step.hit .no{color:var(--green)}
+.step h4{font-size:clamp(1.5rem,3.2vw,2.5rem);font-weight:800;letter-spacing:-.03em;margin:8px 0}
+.step p{color:var(--mist);max-width:38rem;font-size:.94rem}
+
+/* comparativa */
+.cmp{margin-top:52px;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.cmp-r{display:grid;grid-template-columns:1.1fr 1fr 1fr;border-bottom:1px solid rgba(255,255,255,.06)}
+.cmp-r:last-child{border-bottom:0}
+.cmp-r>div{padding:20px 24px;font-size:.9rem}
+.cmp-h{background:var(--coal)}
+.cmp-h>div{font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}
+.cmp-h .me-col{color:var(--green)}
+.crit{color:var(--mist)}
+.yes{color:#fff}
+.yes::before{content:'✓  ';color:var(--green);font-weight:700}
+.no{color:var(--faint)}
+.no::before{content:'✕  ';color:#8a4a44}
+.cmp-r:not(.cmp-h):hover{background:rgba(0,176,80,.035)}
+
+/* CTA */
+.cta{min-height:84svh;display:grid;place-items:center;text-align:center;border-top:1px solid var(--line);overflow:hidden}
+.cta .glow{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);width:min(1000px,120vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(0,176,80,.2),transparent 62%);filter:blur(30px);pointer-events:none}
+.cta h2{position:relative;font-size:clamp(2.3rem,7.4vw,6.8rem);margin-bottom:20px}
+.cta h2 em{font-style:normal;color:var(--green)}
+.cta .sub{position:relative;color:var(--mist);margin-bottom:34px;max-width:32rem;margin-left:auto;margin-right:auto}
+.cta .btn-g{padding:19px 42px;font-size:1rem;animation:pulse 3.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(0,176,80,.42)}50%{box-shadow:0 0 44px 6px rgba(0,176,80,.28)}}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:54px 0 40px}
+.f-top{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap}
+.f-links{display:flex;gap:28px;flex-wrap:wrap}
+.f-links a{font-size:.88rem;color:var(--mist);transition:color .3s}
+.f-links a:hover{color:var(--green)}
+.f-bot{margin-top:42px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:.66rem;color:var(--faint);letter-spacing:.05em}
+.f-bot a{color:var(--faint);cursor:pointer}
+.f-bot a:hover{color:var(--mist)}
+
+/* legal */
+dialog{background:var(--coal);color:#fff;border:1px solid var(--line);border-radius:var(--r);max-width:640px;width:calc(100vw - 40px);padding:0;margin:auto}
+dialog::backdrop{background:rgba(0,0,0,.8);backdrop-filter:blur(6px)}
+.lg-h{display:flex;justify-content:space-between;align-items:center;padding:22px 28px;border-bottom:1px solid var(--line)}
+.lg-h h3{font-size:1.2rem;font-weight:800}
+.lg-x{background:none;border:1px solid var(--line);border-radius:50%;width:34px;height:34px;color:var(--mist);font-size:1.1rem;cursor:pointer;transition:.25s}
+.lg-x:hover{border-color:var(--green);color:var(--green)}
+.lg-b{padding:24px 28px 30px;max-height:60vh;overflow:auto;font-size:.85rem;color:var(--mist)}
+.lg-b p{margin-bottom:13px}
+.lg-b b{color:#fff;font-weight:600}
+
+[hidden]{display:none!important}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--green);outline-offset:4px;border-radius:6px}
+
+@media(max-width:1080px){
+  .calc-grid,.me{grid-template-columns:1fr;gap:52px}
+  .me-photo{max-width:400px;aspect-ratio:16/11}
+  .trio{grid-template-columns:1fr}
+  .tas{grid-template-columns:1fr}
+  .tas-form{border-right:0;border-bottom:1px solid var(--line)}
+  .ex{grid-template-columns:1fr 1fr}
+  .blk{min-height:280px;padding:32px 28px}
+}
+@media(max-width:720px){
+  .ex{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .nav-r{position:fixed;inset:0;background:rgba(0,0,0,.97);backdrop-filter:blur(24px);flex-direction:column;justify-content:center;gap:30px;transform:translateY(-100%);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+  .nav-r.open{transform:none}
+  .nav-r a:not(.pill){font-size:1.24rem;color:#fff}
+  .burger{display:block}
+  .hero h1{font-size:clamp(2.5rem,12.5vw,4.2rem)}
+  .hero-cta{flex-direction:column;align-items:stretch;padding:0 8px}
+  .rail{padding-left:50px}
+  .rail .track{left:14px}
+  .step .dot{left:-43px}
+  .cmp-r{grid-template-columns:1fr;padding:0}
+  .cmp-r.cmp-h{display:none}
+  .cmp-r:not(.cmp-h){border-bottom:1px solid var(--line);padding:18px 20px 20px}
+  .cmp-r>div{padding:0;font-size:.92rem}
+  .crit{color:#fff;font-weight:700;margin-bottom:10px}
+  .yes,.no{padding:6px 0 0!important}
+  .yes::after{content:' — Conmigo';color:var(--faint);font-size:.76rem}
+  .no::after{content:' — Concesionario';color:var(--faint);font-size:.76rem}
+  .calc{padding:28px 22px 24px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+
+/* ===== AÑADIDOS DE LA NUEVA ARQUITECTURA (no tocan el diseño existente) ===== */
+.migas{padding:96px 0 0;font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.08em;color:var(--faint)}
+.migas a{color:var(--faint);transition:color .25s}
+.migas a:hover{color:var(--green)}
+.mg-sep{margin:0 8px;opacity:.5}
+.ficha{padding-top:40px}
+.ficha-top{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(30px,4vw,56px);align-items:start}
+.ficha-img{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--coal)}
+.ficha-img img{width:100%;height:auto;display:block}
+.ficha-side{position:sticky;top:100px}
+.ficha-box{border:1px solid var(--line);border-radius:var(--r);padding:28px;background:linear-gradient(155deg,rgba(255,255,255,.05),transparent)}
+.ficha-box .cc-price{display:block;margin-bottom:6px}
+.ficha-box .desglose{font-family:'JetBrains Mono',monospace;font-size:.76rem;color:var(--mist);margin-bottom:20px;line-height:1.7}
+.ficha-box .desglose b{color:var(--green);font-weight:500}
+.ficha-box .btn{width:100%;margin-bottom:10px}
+.ficha h1{font-size:clamp(1.9rem,3.6vw,3rem);font-weight:900;letter-spacing:-.035em;line-height:1.05;margin-bottom:10px}
+.ficha .sub{color:var(--mist);margin-bottom:26px;font-size:1.02rem}
+.tabla{width:100%;border-collapse:collapse;margin:26px 0}
+.tabla tr{border-bottom:1px solid rgba(255,255,255,.07)}
+.tabla td{padding:14px 4px;font-size:.92rem}
+.tabla td:first-child{color:var(--faint);font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;width:42%}
+.tabla td:last-child{font-weight:700}
+.pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:30px 0}
+.pc{border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.pc h3{font-size:1.05rem;font-weight:800;margin-bottom:14px}
+.pc.si h3{color:var(--green)}
+.pc.no h3{color:#c88}
+.pc li{list-style:none;color:var(--mist);font-size:.9rem;padding:8px 0 8px 20px;position:relative}
+.pc li::before{position:absolute;left:0;font-weight:700}
+.pc.si li::before{content:'+';color:var(--green)}
+.pc.no li::before{content:'\2212';color:#c88}
+.equip{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0}
+.equip span{border:1px solid var(--line);border-radius:99px;padding:8px 15px;font-size:.82rem;color:var(--mist)}
+.grid-coches{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+@media(max-width:1100px){.grid-coches{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.grid-coches{grid-template-columns:1fr}.ficha-top{grid-template-columns:1fr}.ficha-side{position:static}.pros-cons{grid-template-columns:1fr}}
+.cc-img{display:block}
+.cc-b h3 a{color:inherit}
+.cc-b h3 a:hover{color:var(--green)}
+.cta-mid{border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;background:radial-gradient(ellipse 70% 100% at 50% 100%,rgba(0,176,80,.08),transparent 70%)}
+.cta-mid h2{font-size:clamp(1.7rem,3.4vw,2.8rem);margin-bottom:14px}
+.cta-mid p{color:var(--mist);max-width:32rem;margin:0 auto 28px}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.art{max-width:760px;margin:0 auto}
+.art h1{font-size:clamp(2rem,4vw,3.2rem);font-weight:900;letter-spacing:-.035em;line-height:1.08;margin-bottom:18px}
+.art .meta{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:36px}
+.art h2{font-size:clamp(1.4rem,2.4vw,1.9rem);margin:44px 0 16px}
+.art h3{font-size:1.15rem;font-weight:800;margin:28px 0 10px}
+.art p{color:var(--mist);margin-bottom:18px;font-size:1.02rem;line-height:1.75}
+.art ul,.art ol{color:var(--mist);margin:0 0 20px 22px;font-size:1rem;line-height:1.8}
+.art li{margin-bottom:8px}
+.art strong{color:#fff;font-weight:700}
+.art .aviso{border-left:3px solid var(--green);padding:16px 20px;background:rgba(0,176,80,.05);border-radius:0 12px 12px 0;margin:26px 0}
+.art .aviso p{margin:0;color:var(--mist)}
+.guias{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:44px}
+@media(max-width:800px){.guias{grid-template-columns:1fr}}
+.gc{border:1px solid var(--line);border-radius:var(--r);padding:30px;transition:transform .4s,border-color .4s;background:var(--ink)}
+.gc:hover{transform:translateY(-6px);border-color:rgba(0,176,80,.45)}
+.gc h3{font-size:1.3rem;font-weight:800;letter-spacing:-.02em;margin-bottom:10px}
+.gc h3 a{color:inherit}
+.gc p{color:var(--mist);font-size:.9rem;margin-bottom:14px}
+.gc .lee{font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green)}
+.f-cols{display:flex;gap:56px;flex-wrap:wrap}
+.f-cols h4{font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--faint);margin-bottom:14px;font-weight:500}
+.f-cols a{display:block;font-size:.88rem;color:var(--mist);margin-bottom:9px;transition:color .25s}
+.f-cols a:hover{color:var(--green)}
+.rel{border-top:1px solid var(--line);margin-top:60px;padding-top:40px}
+.rel h2{font-size:1.5rem;margin-bottom:24px}
+.rel-links{display:flex;flex-wrap:wrap;gap:10px}
+.rel-links a{border:1px solid var(--line);border-radius:99px;padding:10px 18px;font-size:.86rem;color:var(--mist);transition:.3s}
+.rel-links a:hover{border-color:var(--green);color:var(--green)}
+
+/* Logo nuevo (incluye el nombre y el claim) */
+.brand img{height:46px;width:auto;display:block}
+.nav.on .brand img{height:40px;transition:height .4s}
+footer .brand img{height:56px}
+@media(max-width:720px){.brand img{height:38px}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "AutoDealer", "@id": "https://tratoclaro.es/#negocio", "name": "TratoClaro", "url": "https://tratoclaro.es/", "image": "https://tratoclaro.es/img/logo.png", "telephone": "+34611066820", "email": "contacto@tratoclaro.es", "priceRange": "€€", "description": "Intermediación en la compraventa de vehículos entre particulares en Madrid. Comisión transparente: tú pones el precio y solo cobro si vendo.", "address": {"@type": "PostalAddress", "addressLocality": "Madrid", "addressRegion": "Madrid", "addressCountry": "ES"}, "areaServed": {"@type": "City", "name": "Madrid"}, "founder": {"@type": "Person", "name": "David Nieto Moreno"}, "makesOffer": {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Intermediación en la venta de vehículos", "description": "Fotos, anuncios, visitas y papeleo. Comisión de 350 € o el 7 %, lo que sea mayor. Solo se cobra si el coche se vende."}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio"}, {"@type": "ListItem", "position": 2, "name": "Comprar coche", "item": "https://tratoclaro.es/comprar-coche/"}, {"@type": "ListItem", "position": 3, "name": "Renault"}]}</script>
+</head>
+<body id="top">
+
+<nav class="nav" id="nav">
+  <a href="../../" class="brand"><img src="../../img/logo.png" width="600" height="315" alt="TratoClaro — Intermediación de vehículos"><span>TratoClaro</span></a>
+  <button class="burger" id="burger" aria-label="Menú"><i></i><i></i><i></i></button>
+  <div class="nav-r" id="navr">
+    <a href="../../comprar-coche/">Comprar</a>
+    <a href="../../vender-mi-coche/">Vender</a>
+    <a href="../../tasar-mi-coche/">Tasar</a>
+    <a href="../../#proceso">Proceso</a>
+    <a href="../../guias/">Guías</a>
+    <a href="../../preguntas-frecuentes/">FAQ</a>
+    <a href="https://wa.me/34611066820" class="pill">Solicitar valoración</a>
+  </div>
+</nav>
+
+<nav class="migas" aria-label="Ruta"><div class="wrap"><span>Inicio</span> <span class="mg-sep">/</span> <a href="../../comprar-coche/">Comprar coche</a> <span class="mg-sep">/</span> <span>Renault</span></div></nav>
+
+<main>
+  <section>
+    <div class="wrap">
+      <p class="eyebrow rv">Renault</p>
+      <h1 class="d2 rv" style="font-size:clamp(2rem,4.2vw,3.6rem);margin-top:18px">Renault de segunda mano en Madrid</h1>
+      <p class="rv" style="color:var(--mist);max-width:36rem;margin-top:16px">
+        2 coches Renault en venta ahora mismo.
+        El precio lo pone el vendedor y mi comisión está publicada: no hay margen escondido.
+      </p>
+      <div class="rel-links" style="margin-top:30px"><a href="laguna/">Renault Laguna (1)</a><a href="megane/">Renault Mégane (1)</a></div>
+      <div class="grid-coches"><article class="cc rv">
+  <a href="../../coches/renault-megane-sport-tourer-2019/" class="cc-img">
+    <img src="../../img/coches/renault-megane-sport-tourer-2019.jpg" width="860" height="537" alt="Renault Mégane Sport Tourer 1.5 Blue dCi 115 CV de 2019 en venta en Madrid" loading="lazy">
+    <span class="cc-badge">En venta</span>
+  </a>
+  <div class="cc-b">
+    <h3><a href="../../coches/renault-megane-sport-tourer-2019/">Renault Mégane</a></h3>
+    <p class="cc-sub">Sport Tourer 1.5 Blue dCi 115 CV</p>
+    <ul class="cc-specs">
+      <li><i>Año</i><b>2019</b></li>
+      <li><i>Kilómetros</i><b>215.000</b></li>
+      <li><i>Combustible</i><b>Diésel</b></li>
+      <li><i>Etiqueta</i><b>C</b></li>
+    </ul>
+    <div class="cc-foot">
+      <span class="cc-price">8.100 €</span>
+      <div class="cc-btns">
+        <a href="../../coches/renault-megane-sport-tourer-2019/" class="btn btn-g">Ver ficha</a>
+        <a href="https://wa.me/34611066820?text=Hola%20David%2C%20me%20interesa%20el%20Renault%20Mégane" class="btn btn-o">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</article><article class="cc rv">
+  <a href="../../coches/renault-laguna-gt-4control-2011/" class="cc-img">
+    <img src="../../img/coches/renault-laguna-gt-4control-2011.jpg" width="860" height="537" alt="Renault Laguna GT 2.0 dCi 180 CV 4Control de 2011 en venta en Madrid" loading="lazy">
+    <span class="cc-badge">En venta</span>
+  </a>
+  <div class="cc-b">
+    <h3><a href="../../coches/renault-laguna-gt-4control-2011/">Renault Laguna</a></h3>
+    <p class="cc-sub">GT 2.0 dCi 180 CV 4Control</p>
+    <ul class="cc-specs">
+      <li><i>Año</i><b>2011</b></li>
+      <li><i>Kilómetros</i><b>240.000</b></li>
+      <li><i>Combustible</i><b>Diésel</b></li>
+      <li><i>Etiqueta</i><b>B</b></li>
+    </ul>
+    <div class="cc-foot">
+      <span class="cc-price">6.100 €</span>
+      <div class="cc-btns">
+        <a href="../../coches/renault-laguna-gt-4control-2011/" class="btn btn-g">Ver ficha</a>
+        <a href="https://wa.me/34611066820?text=Hola%20David%2C%20me%20interesa%20el%20Renault%20Laguna" class="btn btn-o">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</article></div>
+    </div>
+  </section>
+  <section class="cta-mid">
+  <div class="wrap">
+    <h2 class="d2 rv">¿Tienes un Renault que quieres vender?</h2>
+    <p class="rv">Te digo a qué precio se está vendiendo de verdad y cuánto te llevarías tú.</p>
+    <div class="cta-btns rv">
+      <a href="../../tasar-mi-coche/" class="btn btn-g">Tasar mi coche gratis</a>
+      <a href="https://wa.me/34611066820" class="btn btn-o">Escribir por WhatsApp</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <a href="../../" class="brand"><img src="../../img/logo.png" width="600" height="315" alt="TratoClaro — Intermediación de vehículos"><span>TratoClaro</span></a>
+      <div class="f-cols">
+        <div>
+          <h4>Servicios</h4>
+          <a href="../../vender-mi-coche/">Vender mi coche</a>
+          <a href="../../comprar-coche/">Comprar un coche</a>
+          <a href="../../encuentrame-un-coche/">Encuéntrame un coche</a>
+          <a href="../../tasar-mi-coche/">Tasar mi coche gratis</a>
+        </div>
+        <div>
+          <h4>Información</h4>
+          <a href="../../guias/">Guías</a>
+          <a href="../../preguntas-frecuentes/">Preguntas frecuentes</a>
+          <a href="../../sobre-david/">Quién soy</a>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <a href="https://wa.me/34611066820">WhatsApp</a>
+          <a href="tel:+34611066820">611 06 68 20</a>
+          <a href="mailto:contacto@tratoclaro.es">contacto@tratoclaro.es</a>
+        </div>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>David Nieto Moreno actúa como <strong>mediador</strong> entre particulares · Madrid · © 2026 TratoClaro</span>
+      <span><a href="../../aviso-legal/">Aviso legal</a> · <a href="../../privacidad/">Privacidad</a> · <a href="../../cookies/">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+const $ = id => document.getElementById(id);
+
+/* Formateo de miles — lo usan la calculadora y el tasador, va en ámbito común */
+const fm = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+const anio = $('y'); if (anio) anio.textContent = new Date().getFullYear();
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* nav */
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => nav.classList.toggle('on', scrollY > 24), {passive:true});
+const burger = document.getElementById('burger'), navr = document.getElementById('navr');
+burger.addEventListener('click', () => { burger.classList.toggle('x'); navr.classList.toggle('open'); });
+navr.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { burger.classList.remove('x'); navr.classList.remove('open'); }));
+
+/* legal */
+document.querySelectorAll('[data-lg]').forEach(a => a.addEventListener('click', () => document.getElementById('lg-' + a.dataset.lg).showModal()));
+document.querySelectorAll('dialog').forEach(d => {
+  d.querySelector('.lg-x').addEventListener('click', () => d.close());
+  d.addEventListener('click', e => { if (e.target === d) d.close(); });
+});
+
+/* ---------- CALCULADORA (solo si está en la página) ---------- */
+let paint = () => {}, pin = null;
+if (document.getElementById('rng') && document.getElementById('pin')) {
+const rng = document.getElementById('rng'); pin = document.getElementById('pin');
+const MIN = 2000, MAX = 200000;
+function paint(p){
+  const fee = Math.max(350, Math.round(p * 0.07));
+  const you = p - fee;
+  document.getElementById('vyou').textContent = fm(you) + ' €';
+  document.getElementById('vfee').textContent = fm(fee) + ' €';
+  document.getElementById('vshare').textContent = '→ El ' + (you / p * 100).toFixed(1).replace('.', ',') + ' % del precio es para ti';
+  rng.value = Math.min(MAX, Math.max(MIN, p));
+  rng.style.setProperty('--f', ((rng.value - MIN) / (MAX - MIN) * 100) + '%');
+}
+rng.addEventListener('input', () => { pin.value = fm(+rng.value); paint(+rng.value); });
+pin.addEventListener('focus', () => { pin.value = pin.value.replace(/\D/g, ''); pin.select(); });
+pin.addEventListener('input', () => {
+  const raw = pin.value.replace(/\D/g, '');
+  pin.value = raw;
+  const p = parseInt(raw, 10);
+  if (!isNaN(p) && p >= MIN) paint(Math.min(MAX, p));
+});
+pin.addEventListener('blur', () => {
+  let p = parseInt(pin.value.replace(/\D/g, ''), 10);
+  if (isNaN(p)) p = 13500;
+  p = Math.min(MAX, Math.max(MIN, p));
+  pin.value = fm(p);
+  paint(p);
+});
+pin.addEventListener('keydown', e => { if (e.key === 'Enter') pin.blur(); });
+paint(13500);
+}
+
+/* ---------- Modelos reales con años de fabricación ----------
+   [nombre, precio de nuevo aprox. €, desde, hasta (0 = aún se fabrica)]
+   Los modelos que no existían en el año elegido no se muestran.
+   'p:1' = marca premium (se deprecia más despacio). */
+const COCHES = {
+  "Abarth":{p:0,m:[["595",30000,2012,2023],["695",38000,2009,0],["500e",37000,2023,0]]},
+  "Alfa Romeo":{p:1,m:[["MiTo",20000,2008,2018],["Giulietta",28000,2010,2020],["Giulia",50000,2016,0],["Stelvio",58000,2017,0],["Tonale",40000,2022,0],["Junior",32000,2024,0]]},
+  "Audi":{p:1,m:[["A1",27000,2010,0],["A3",38000,1996,0],["A4",47000,1994,0],["A5",55000,2007,0],["A6",65000,1994,0],["A7",78000,2010,0],["A8",110000,1994,0],["Q2",33000,2016,0],["Q3",42000,2011,0],["Q4 e-tron",50000,2021,0],["Q5",55000,2008,0],["Q7",78000,2005,0],["Q8",95000,2018,0],["TT",45000,1998,2023],["e-tron GT",110000,2021,0],["S3",55000,1999,0],["RS3",70000,2011,0]]},
+  "BMW":{p:1,m:[["Serie 1",34000,2004,0],["Serie 2",40000,2014,0],["Serie 3",47000,1990,0],["Serie 4",55000,2013,0],["Serie 5",62000,1990,0],["Serie 6",75000,2003,2018],["Serie 7",100000,1990,0],["Serie 8",115000,1990,0],["X1",42000,2009,0],["X2",45000,2018,0],["X3",55000,2003,0],["X4",60000,2014,0],["X5",78000,1999,0],["X5 M",150000,2010,0],["X6",85000,2008,0],["X7",100000,2018,0],["Z4",55000,2002,0],["i3",38000,2013,2022],["i4",60000,2021,0],["iX",85000,2021,0],["M3",95000,1990,0],["M4",100000,2014,0]]},
+  "BYD":{p:0,m:[["Atto 3",38000,2022,0],["Dolphin",30000,2023,0],["Seal",45000,2023,0],["Seal U",40000,2023,0]]},
+  "Citroën":{p:0,m:[["C1",13000,2005,2022],["C3",18000,2002,0],["C3 Aircross",22000,2017,0],["C4",25000,2004,0],["C4 X",27000,2022,0],["C5 Aircross",31000,2018,0],["C5 X",36000,2021,0],["Berlingo",25000,1996,0],["ë-C4",35000,2020,0],["C-Elysée",16000,2012,2022]]},
+  "Cupra":{p:0,m:[["Ateca",38000,2018,0],["León",32000,2018,0],["Formentor",35000,2020,0],["Born",38000,2021,0],["Tavascan",50000,2024,0],["Terramar",42000,2024,0]]},
+  "DS":{p:1,m:[["DS3",30000,2010,0],["DS4",35000,2011,0],["DS7",45000,2017,0],["DS9",55000,2020,0]]},
+  "Dacia":{p:0,m:[["Logan",13000,2004,0],["Sandero",14000,2008,0],["Sandero Stepway",16000,2009,0],["Duster",19000,2010,0],["Spring",18000,2021,0],["Jogger",20000,2022,0],["Bigster",25000,2025,0]]},
+  "Fiat":{p:0,m:[["Panda",15000,2003,0],["500",18000,2007,0],["500X",24000,2014,0],["Tipo",21000,2015,0],["500e",30000,2020,0],["600",26000,2023,0],["Doblò",24000,2000,0]]},
+  "Ford":{p:0,m:[["Fiesta",20000,1990,2023],["Focus",27000,1998,0],["Mondeo",32000,1993,2022],["Kuga",34000,2008,0],["EcoSport",22000,2013,2022],["Puma",26000,2019,0],["Explorer",50000,2020,0],["Mustang Mach-E",55000,2021,0],["Ranger",40000,1998,0],["Transit",30000,1990,0]]},
+  "Honda":{p:0,m:[["Civic",35000,1990,0],["CR-V",45000,1995,0],["HR-V",32000,1999,0],["Jazz",26000,2001,0],["ZR-V",40000,2023,0]]},
+  "Hyundai":{p:0,m:[["Santa Fe",45000,2000,0],["Tucson",32000,2004,0],["i30",25000,2007,0],["i10",15000,2008,0],["i20",19000,2008,0],["Kona",26000,2017,0],["Bayon",22000,2021,0],["Ioniq 5",48000,2021,0],["Ioniq 6",52000,2022,0]]},
+  "Jaguar":{p:1,m:[["XF",58000,2007,0],["XE",48000,2015,2024],["F-Pace",65000,2016,0],["E-Pace",50000,2017,0],["I-Pace",80000,2018,0]]},
+  "Jeep":{p:0,m:[["Wrangler",60000,1990,0],["Grand Cherokee",75000,1992,0],["Compass",35000,2006,0],["Renegade",28000,2014,0],["Avenger",30000,2023,0]]},
+  "Kia":{p:0,m:[["Sportage",31000,1993,0],["Rio",19000,2000,0],["Sorento",48000,2002,0],["Picanto",15000,2004,0],["Ceed",24000,2006,0],["Niro",30000,2016,0],["Stonic",22000,2017,0],["XCeed",27000,2019,0],["EV6",50000,2021,0],["EV3",38000,2024,0]]},
+  "Land Rover":{p:1,m:[["Range Rover",130000,1990,0],["Discovery",70000,1990,0],["Defender",70000,1990,0],["Range Rover Sport",95000,2005,0],["Range Rover Evoque",55000,2011,0],["Discovery Sport",52000,2014,0],["Range Rover Velar",70000,2017,0]]},
+  "Lexus":{p:1,m:[["RX",70000,1998,0],["IS",45000,1999,0],["CT",35000,2010,2022],["NX",52000,2014,0],["ES",55000,2018,0],["UX",40000,2018,0]]},
+  "MG":{p:0,m:[["MG3",19000,2011,0],["ZS",23000,2017,0],["HS",30000,2018,0],["MG5",30000,2020,0],["MG4",30000,2022,0]]},
+  "Mazda":{p:0,m:[["MX-5",34000,1990,0],["Mazda2",20000,2002,0],["Mazda6",33000,2002,0],["Mazda3",28000,2003,0],["CX-5",36000,2012,0],["CX-3",24000,2015,2022],["CX-30",28000,2019,0],["CX-60",50000,2022,0]]},
+  "Mercedes":{p:1,m:[["Clase S",110000,1990,0],["Clase G",150000,1990,0],["Clase C",52000,1993,0],["Clase E",65000,1993,0],["Vito",35000,1996,0],["Clase A",37000,1997,0],["CLS",72000,2004,0],["Clase B",38000,2005,0],["CLA",42000,2013,0],["GLA",42000,2013,0],["GLC",58000,2015,0],["GLE",80000,2015,0],["GLS",105000,2015,0],["GLB",48000,2019,0],["EQC",70000,2019,2024],["EQA",50000,2021,0]]},
+  "Mini":{p:1,m:[["Cooper",30000,2001,0],["Cabrio",35000,2004,0],["Clubman",34000,2007,2024],["Countryman",38000,2010,0]]},
+  "Mitsubishi":{p:0,m:[["Outlander",38000,2001,0],["ASX",25000,2010,0],["Space Star",15000,2013,0],["Eclipse Cross",32000,2017,0]]},
+  "Nissan":{p:0,m:[["Micra",18000,1990,0],["X-Trail",38000,2001,0],["Note",20000,2004,2016],["Qashqai",32000,2007,0],["Juke",25000,2010,0],["Leaf",33000,2010,0],["Pulsar",22000,2014,2018],["Ariya",48000,2022,0]]},
+  "Opel":{p:0,m:[["Corsa",20000,1990,0],["Astra",28000,1991,0],["Combo",25000,1993,0],["Insignia",33000,2008,2022],["Mokka",25000,2012,0],["Crossland",24000,2017,0],["Grandland",32000,2017,0]]},
+  "Peugeot":{p:0,m:[["Partner",25000,1996,0],["307/308",28000,2001,0],["207/208",20000,2006,0],["3008",33000,2009,0],["5008",37000,2009,0],["508",40000,2010,0],["2008",24000,2013,0],["108",13000,2014,2021],["Rifter",27000,2018,0],["e-208",33000,2019,0],["408",34000,2022,0]]},
+  "Porsche":{p:1,m:[["911",130000,1990,0],["Boxster / 718 Boxster",78000,1996,0],["Cayenne",95000,2002,0],["Cayman / 718 Cayman",75000,2005,0],["Panamera",110000,2009,0],["Macan",75000,2014,0],["Taycan",105000,2019,0]]},
+  "Renault":{p:0,m:[["Clio",19000,1990,0],["Espace",42000,1990,0],["Twingo",15000,1992,2024],["Mégane",26000,1995,0],["Scénic",30000,1996,0],["Kangoo",24000,1997,0],["Laguna",33000,1994,2015],["Zoe",30000,2012,2024],["Captur",23000,2013,0],["Kadjar",28000,2015,2022],["Arkana",30000,2021,0],["Austral",33000,2022,0],["Mégane E-Tech",38000,2022,0]]},
+  "Seat":{p:0,m:[["Ibiza",19000,1990,0],["Toledo",19000,1991,2019],["Alhambra",35000,1996,2020],["León",25000,1999,0],["Mii",13000,2011,2021],["Ateca",27000,2016,0],["Arona",22000,2017,0],["Tarraco",33000,2018,0]]},
+  "Skoda":{p:0,m:[["Octavia",29000,1996,0],["Fabia",20000,1999,0],["Superb",38000,2001,0],["Citigo",13000,2011,2020],["Kodiaq",38000,2016,0],["Karoq",31000,2017,0],["Scala",23000,2019,0],["Kamiq",24000,2019,0],["Enyaq",45000,2020,0],["Elroq",35000,2024,0]]},
+  "Smart":{p:0,m:[["ForTwo",20000,1998,0],["ForFour",21000,2004,0],["#1",40000,2022,0]]},
+  "Subaru":{p:0,m:[["Impreza",28000,1992,0],["Outback",42000,1995,0],["Forester",38000,1997,0],["XV / Crosstrek",30000,2011,0]]},
+  "Suzuki":{p:0,m:[["Vitara",26000,1990,0],["Jimny",23000,1998,0],["Ignis",18000,2000,0],["Swift",19000,2004,0],["S-Cross",28000,2013,0],["Across",50000,2020,2023]]},
+  "Tesla":{p:1,m:[["Model S",95000,2013,0],["Model X",105000,2016,0],["Model 3",42000,2019,0],["Model Y",47000,2021,0]]},
+  "Toyota":{p:0,m:[["Corolla",27000,1990,0],["Hilux",38000,1990,0],["Land Cruiser",65000,1990,0],["RAV4",37000,1994,0],["Yaris",21000,1999,0],["Prius",38000,2000,0],["Aygo",17000,2005,0],["C-HR",30000,2016,0],["Proace",32000,2016,0],["Yaris Cross",25000,2021,0],["Highlander",55000,2021,0],["bZ4X",45000,2022,0]]},
+  "Volkswagen":{p:0,m:[["Golf",30000,1990,0],["Passat",38000,1990,0],["Polo",21000,1990,0],["Golf GTI",45000,1990,0],["Sharan",38000,1995,2022],["Caddy",26000,1996,0],["Touareg",70000,2002,0],["Touran",33000,2003,0],["Tiguan",36000,2007,0],["up!",14000,2011,2023],["T-Roc",28000,2017,0],["Arteon",45000,2017,2024],["T-Cross",24000,2019,0],["ID.3",40000,2020,0],["ID.4",45000,2020,0],["Taigo",25000,2021,0]]},
+  "Volvo":{p:1,m:[["S60",48000,2000,0],["XC90",78000,2002,0],["XC60",58000,2008,0],["V60",50000,2010,0],["V40",35000,2012,2019],["S90",60000,2016,0],["XC40",45000,2017,0],["EX30",38000,2023,0]]},
+  "Otra marca":{p:0,m:[["Otro modelo",25000,1990,0]]}
+};
+
+/* Coches que apenas pierden valor: icónicos o con demanda altísima de segunda mano. */
+const ICONOS = new Set(['911','718 Cayman','718 Boxster','Defender','Clase G','Jimny','MX-5','Land Cruiser','Wrangler','Model 3','Model Y']);
+/* Marcas con retención de valor muy por encima de la media en España. */
+const RESISTEN = new Set(['Dacia','Toyota','Suzuki','Lexus']);
+
+/* ---------- TASADOR (solo si está en la página) ---------- */
+if (document.getElementById('t_make')) {
+const T = {
+  nw: document.getElementById('t_new'),
+  yr: document.getElementById('t_year'),
+  km: document.getElementById('t_km'),
+  fuel: 'gasolina',
+  cond: 'ok',
+  prem: 0
+};
+const NOW = new Date().getFullYear();
+const num = el => parseInt(String(el.value).replace(/\D/g, ''), 10) || 0;
+const selMake  = document.getElementById('t_make');
+const selModel = document.getElementById('t_model');
+const selYear  = document.getElementById('t_year');
+
+/* Flujo: marca → modelo → año.
+   El año se rellena con los años en que ESE modelo se fabricó de verdad,
+   así que es imposible elegir un Arona de 2010 o un Model 3 de 2015. */
+Object.keys(COCHES).forEach(k => selMake.add(new Option(k, k)));
+
+function pintaModelos(){
+  const marca = COCHES[selMake.value];
+  selModel.innerHTML = '';
+  marca.m.forEach(([n, pr, de, ha]) => {
+    const o = new Option(n, pr);
+    o.dataset.n = n; o.dataset.de = de; o.dataset.ha = ha;
+    selModel.add(o);
+  });
+  T.prem = marca.p;
+  pintaAnios();
+}
+
+function pintaAnios(){
+  const o = selModel.selectedOptions[0];
+  if (!o) return;
+  const de = +o.dataset.de;
+  const ha = +o.dataset.ha === 0 ? NOW : Math.min(+o.dataset.ha, NOW);
+  const previo = +selYear.value;
+
+  selYear.innerHTML = '';
+  for (let a = ha; a >= de; a--) selYear.add(new Option(a, a));
+
+  /* si el año anterior sigue siendo válido, se conserva */
+  if (previo >= de && previo <= ha) selYear.value = previo;
+  else selYear.selectedIndex = Math.min(4, selYear.options.length - 1);  /* ~5 años de antigüedad */
+
+  aplicaModelo();
+}
+
+function aplicaModelo(){
+  const o = selModel.selectedOptions[0];
+  if (!o) return;
+  T.nw.value = fm(+o.value);
+  const hint = document.getElementById('t_newhint');
+  if (hint) hint.textContent =
+    'Precio orientativo de nuevo del ' + o.dataset.n +
+    ' (se fabricó de ' + o.dataset.de + ' a ' + (o.dataset.ha !== '0' ? o.dataset.ha : 'hoy') +
+    '). Si tu versión era más equipada, súbelo a mano.';
+  tasar();
+}
+
+selMake.addEventListener('change', pintaModelos);
+selModel.addEventListener('change', pintaAnios);
+selYear.addEventListener('change', tasar);
+
+/* Modelo de depreciación:
+   - Año 1: pierde ~22 %. Después, ~13 % anual acumulado.
+   - Kilómetros: se compara con 15.000 km/año esperados.
+   - Combustible y estado: ajustes moderados.
+   Devuelve una horquilla, no un número exacto — porque un número exacto sería mentira. */
+function tasar(){
+  const nuevo = Math.min(300000, Math.max(3000, num(T.nw)));
+  const year  = Math.min(NOW, Math.max(1950, num(T.yr)));
+
+  const kms   = Math.min(600000, Math.max(0, num(T.km)));
+  const edad  = Math.max(0, NOW - year);
+
+  /* Curva calibrada con retención real del mercado español.
+     Tres velocidades: los icónicos casi no bajan, las marcas premium y las
+     que resisten (Dacia, Toyota…) bajan despacio, el resto va al ritmo normal. */
+  const modelo = selModel.selectedOptions[0]?.dataset.n || '';
+  const icono = ICONOS.has(modelo);
+  const lento = T.prem || RESISTEN.has(selMake.value);
+
+  /* Curva en DOS TRAMOS, calibrada con precios reales del mercado español.
+     Un premium pierde poco los primeros años pero se hunde de viejo (nadie quiere
+     un Mercedes de 16 años con 200.000 km). Un utilitario cae más rápido al
+     principio, pero de viejo aguanta mucho mejor en proporción. */
+  const B0 = icono ? 1.00 : lento ? .98  : 1.00;   /* punto de partida */
+  const R1 = icono ? .95  : lento ? .905 : .88;    /* años 1-8 */
+  const R2 = icono ? .95  : lento ? .86  : .93;    /* de 9 en adelante */
+
+  let dep;
+  if (edad === 0)      dep = .95;
+  else if (edad <= 8)  dep = B0 * Math.pow(R1, edad);
+  else                 dep = B0 * Math.pow(R1, 8) * Math.pow(R2, edad - 8);
+  dep = Math.max(.06, dep);
+
+  /* Los kilómetros pesan mucho más de lo que parece: 60.000 km de más sobre lo
+     esperado pueden restar un 10-15 % del valor. */
+  const espera = Math.max(1, edad) * 15000;
+  const desvio = (kms - espera) / espera;
+  const fKm = Math.min(1.15, Math.max(.62, 1 - desvio * .20));
+
+  const fFuel = {gasolina:1, diesel:.96, hibrido:1.06, electrico:1.0}[T.fuel];
+  const fCond = {exc:1.07, ok:1, reg:.89}[T.cond];
+
+  const base = nuevo * dep * fKm * fFuel * fCond;
+  const lo = Math.max(300, Math.round(base * .91 / 50) * 50);
+  const hi = Math.max(lo + 100, Math.round(base * 1.09 / 50) * 50);
+  const mid = Math.round((lo + hi) / 2 / 50) * 50;
+
+  const fee = Math.max(350, Math.round(mid * .07));
+  document.getElementById('t_range').textContent = fm(lo) + ' € — ' + fm(hi) + ' €';
+  document.getElementById('t_mid').textContent   = fm(mid) + ' €';
+  document.getElementById('t_you').textContent   = fm(mid - fee) + ' €';
+  document.getElementById('t_fee').textContent   = fm(fee) + ' €';
+  document.getElementById('t_fill').style.width  = Math.min(100, Math.max(6, dep * fKm * 100)) + '%';
+  T.mid = mid;
+}
+
+['t_new','t_km'].forEach(id => {
+  const el = document.getElementById(id);
+  el.addEventListener('input', () => {
+    const raw = el.value.replace(/\D/g, '');
+    el.value = raw ? fm(parseInt(raw, 10)) : '';
+    /* al cambiar el año hay que recalcular qué modelos existían entonces */
+    tasar();
+  });
+  el.addEventListener('blur', tasar);
+});
+[['t_fuel','fuel'],['t_cond','cond']].forEach(([id, key]) => {
+  document.getElementById(id).addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    b.parentElement.querySelectorAll('button').forEach(x => x.classList.remove('on'));
+    b.classList.add('on');
+    T[key] = b.dataset.v;
+    tasar();
+  });
+});
+/* el tasador alimenta la calculadora de comisión */
+document.getElementById('t_go').addEventListener('click', () => {
+  if (T.mid) { pin.value = fm(T.mid); paint(T.mid); }
+});
+selMake.value = 'Volkswagen';
+pintaModelos();          /* rellena modelos y años */
+selYear.value = '2019';
+tasar();
+
+}
+
+/* ---------- Animaciones ---------- */
+if (!reduced && window.gsap && window.ScrollTrigger) {
+  gsap.registerPlugin(ScrollTrigger);
+
+  if (window.Lenis) {
+    const lenis = new Lenis({ duration:1.15, smoothWheel:true, lerp:.09 });
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add(t => lenis.raf(t * 1000));
+    gsap.ticker.lagSmoothing(0);
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const el = document.querySelector(a.getAttribute('href'));
+        if (el) { e.preventDefault(); lenis.scrollTo(el, {offset:-70}); }
+      });
+    });
+  }
+
+  /* Cada animación se ejecuta SOLO si su elemento existe en esta página.
+     Antes se lanzaban siempre y GSAP avisaba: "target #fill not found". */
+
+  /* Hero — solo en la portada */
+  if (document.querySelector('.hero h1 .w b')) {
+    gsap.from('.hero h1 .w b', { yPercent:112, duration:1.25, ease:'expo.out', stagger:.09, delay:.25 });
+  }
+  const heroSub = ['.hero-sub','.hero-cta','.scroll-cue'].filter(s => document.querySelector(s));
+  if (heroSub.length) {
+    gsap.from(heroSub, { y:26, opacity:0, duration:1, ease:'power3.out', stagger:.1, delay:.75 });
+  }
+  if (document.getElementById('heroIn')) {
+    gsap.to('#heroIn', { yPercent:-24, opacity:0, ease:'none',
+      scrollTrigger:{ trigger:'.hero', start:'top top', end:'bottom 42%', scrub:true } });
+  }
+  if (document.getElementById('hv')) {
+    gsap.to('#hv', { scale:1.14, yPercent:8, ease:'none',
+      scrollTrigger:{ trigger:'.hero', start:'top top', end:'bottom top', scrub:true } });
+  }
+
+  /* Aparición de bloques — esto sí está en todas las páginas */
+  gsap.utils.toArray('.rv').forEach(el => {
+    gsap.from(el, { y:38, opacity:0, duration:1, ease:'power3.out',
+      scrollTrigger:{ trigger:el, start:'top 88%' } });
+  });
+
+  /* Raíl del proceso — solo donde exista */
+  if (document.getElementById('rail') && document.getElementById('fill')) {
+    gsap.to('#fill', { height:'100%', ease:'none',
+      scrollTrigger:{ trigger:'#rail', start:'top 62%', end:'bottom 72%', scrub:.5 } });
+  }
+  gsap.utils.toArray('.step').forEach(s => {
+    gsap.from(s, { x:-24, opacity:0, duration:.9, ease:'power3.out',
+      scrollTrigger:{ trigger:s, start:'top 84%' } });
+    ScrollTrigger.create({ trigger:s, start:'top 68%', end:'bottom 40%',
+      onToggle: self => s.classList.toggle('hit', self.isActive) });
+  });
+} else {
+  document.querySelectorAll('.step').forEach(s => s.classList.add('hit'));
+  const f = document.getElementById('fill'); if (f) f.style.height = '100%';
+}
+});
+</script>
+</body>
+</html>

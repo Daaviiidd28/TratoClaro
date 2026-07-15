@@ -1,0 +1,14 @@
+{
+  "name": "TratoClaro — Intermediación de vehículos",
+  "short_name": "TratoClaro",
+  "description": "Vendo tu coche por ti en Madrid con la comisión a la vista.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    { "src": "/img/favicon-48.png",      "sizes": "48x48",   "type": "image/png" },
+    { "src": "/img/apple-touch-icon.png","sizes": "180x180", "type": "image/png" },
+    { "src": "/img/icon-512.png",        "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

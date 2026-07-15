@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sin zonas privadas. Todo el contenido es público y útil.
+Sitemap: https://tratoclaro.es/sitemap.xml

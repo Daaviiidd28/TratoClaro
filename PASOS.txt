@@ -1,0 +1,32 @@
+SUBIR LA WEB ENTERA (otra vez toca todo)
+==========================================
+
+Esta actualización trae:
+  - El Proceso (raíl verde, los 5 pasos) de vuelta en la portada
+  - Favicon con las dos letras "TC" en blanco solido
+  - Logo nuevo en la cabecera
+
+Como toca la cabecera y la portada, hay que resubir todo el contenido.
+
+Mismo procedimiento de siempre:
+1. Descomprime este ZIP
+2. GitHub -> "Add file" -> "Upload files"
+3. Entra en la carpeta descomprimida, Ctrl+A, arrastra TODO a GitHub
+4. Commit changes
+5. Espera 2 minutos
+
+
+OJO CON EL LOGO
+----------------
+El archivo de logo que me pasaste era muy pequeno (una captura
+recortada, no el archivo original). Lo he ampliado lo mejor posible,
+pero en la cabecera puede notarse algo blando, no tan nitido como
+antes. Si tienes el archivo del logo en su tamano original (el que
+descargaste de ChatGPT, normalmente 1024x1024 o similar), pasamelo
+y lo dejo perfecto.
+
+
+COMPROBAR
+---------
+tratoclaro.es                     -> debe verse el rail del Proceso al hacer scroll
+tratoclaro.es/img/favicon-32.png  -> las dos letras TC en blanco
