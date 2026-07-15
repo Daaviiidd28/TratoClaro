@@ -409,6 +409,14 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .guias{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:44px}
 @media(max-width:800px){.guias{grid-template-columns:1fr}}
 .gc{border:1px solid var(--line);border-radius:var(--r);padding:30px;transition:transform .4s,border-color .4s;background:var(--ink)}
+
+/* Tarjetas de servicio con foto (variante de .gc) */
+.gc-foto{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.gc-foto .gc-img{position:relative;aspect-ratio:16/10;overflow:hidden;background:linear-gradient(150deg,#1c1c20,#0c0c0e)}
+.gc-foto .gc-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(.55) brightness(.75);transition:transform 1s cubic-bezier(.16,1,.3,1),filter .6s}
+.gc-foto:hover .gc-img img{transform:scale(1.06);filter:grayscale(0) brightness(.92)}
+.gc-foto .gc-b{padding:26px 28px 28px}
+
 .gc:hover{transform:translateY(-6px);border-color:rgba(0,176,80,.45)}
 .gc h3{font-size:1.3rem;font-weight:800;letter-spacing:-.02em;margin-bottom:10px}
 .gc h3 a{color:inherit}
@@ -429,9 +437,21 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .nav.on .brand img{height:40px;transition:height .4s}
 footer .brand img{height:56px}
 @media(max-width:720px){.brand img{height:38px}}
+
+
+/* Métodos de pago */
+.pago-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pago-box{border:1px solid var(--line);border-radius:var(--r);padding:24px;background:var(--ink);text-align:center}
+.pago-box.pago-soon{opacity:.6}
+.pago-k{display:block;font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green);margin-bottom:12px}
+.pago-v{font-weight:800;font-size:1.3rem;letter-spacing:-.01em;margin-bottom:16px;word-break:break-word}
+.pago-copy{width:100%;font-size:.82rem;padding:10px 14px}
+.pago-copy.copiado{background:var(--green);color:#000;border-color:var(--green)}
+@media(max-width:800px){.pago-grid{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "AutoDealer", "@id": "https://tratoclaro.es/#negocio", "name": "TratoClaro", "url": "https://tratoclaro.es/", "image": "https://tratoclaro.es/img/logo.png", "telephone": "+34611066820", "email": "contacto@tratoclaro.es", "priceRange": "€€", "description": "Intermediación en la compraventa de vehículos entre particulares en Madrid. Comisión transparente: tú pones el precio y solo cobro si vendo.", "address": {"@type": "PostalAddress", "addressLocality": "Madrid", "addressRegion": "Madrid", "addressCountry": "ES"}, "areaServed": {"@type": "City", "name": "Madrid"}, "founder": {"@type": "Person", "name": "David Nieto Moreno"}, "makesOffer": {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Intermediación en la venta de vehículos", "description": "Fotos, anuncios, visitas y papeleo. Comisión de 350 € o el 7 %, lo que sea mayor. Solo se cobra si el coche se vende."}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio"}, {"@type": "ListItem", "position": 2, "name": "Quién soy"}]}</script>
+<script defer data-domain="tratoclaro.es" src="https://plausible.io/js/script.js"></script>
 </head>
 <body id="top">
 
@@ -443,6 +463,7 @@ footer .brand img{height:56px}
     <a href="../vender-mi-coche/">Vender</a>
     <a href="../tasar-mi-coche/">Tasar</a>
     <a href="../#proceso">Proceso</a>
+    <a href="../servicios-sueltos/">Servicios</a>
     <a href="../guias/">Guías</a>
     <a href="../preguntas-frecuentes/">FAQ</a>
     <a href="https://wa.me/34611066820" class="pill">Solicitar valoración</a>
@@ -469,7 +490,7 @@ footer .brand img{height:56px}
       Tu coche se queda contigo hasta que se vende, y el precio lo decides tú.</p></div>
       <h2 class="rv">Cómo trabajo</h2>
       <p class="rv">Cuando llames, te cojo el teléfono yo. Cuando vengan a ver el coche, voy yo. Cuando haya
-      que ir a la DGT, voy yo. Siempre la misma persona, de principio a fin.</p>
+      que ir a ver el coche, voy yo. Siempre la misma persona, de principio a fin.</p>
       <section class="rel">
         <h2>Enlaces</h2>
         <div class="rel-links">
@@ -504,6 +525,7 @@ footer .brand img{height:56px}
           <a href="../comprar-coche/">Comprar un coche</a>
           <a href="../encuentrame-un-coche/">Encuéntrame un coche</a>
           <a href="../tasar-mi-coche/">Tasar mi coche gratis</a>
+          <a href="../servicios-sueltos/">Servicios sueltos</a>
         </div>
         <div>
           <h4>Información</h4>
@@ -541,6 +563,27 @@ const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 /* nav */
 const nav = document.getElementById('nav');
 addEventListener('scroll', () => nav.classList.toggle('on', scrollY > 24), {passive:true});
+
+
+/* ---------- Copiar Bizum / IBAN ---------- */
+document.querySelectorAll('.pago-copy[data-copy]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const texto = btn.dataset.copy;
+    const listo = () => {
+      const original = btn.textContent;
+      btn.textContent = 'Copiado ✓';
+      btn.classList.add('copiado');
+      setTimeout(() => { btn.textContent = original; btn.classList.remove('copiado'); }, 2000);
+    };
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(texto).then(listo).catch(() => {
+        const ta = document.createElement('textarea');
+        ta.value = texto; document.body.appendChild(ta); ta.select();
+        document.execCommand('copy'); document.body.removeChild(ta); listo();
+      });
+    }
+  });
+});
 const burger = document.getElementById('burger'), navr = document.getElementById('navr');
 burger.addEventListener('click', () => { burger.classList.toggle('x'); navr.classList.toggle('open'); });
 navr.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { burger.classList.remove('x'); navr.classList.remove('open'); }));

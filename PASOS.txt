@@ -1,11 +1,24 @@
-SOLO CAMBIA EL FAVICON (el resto ya estaba bien)
-==================================================
+DOS COSAS AÑADIDAS
+=====================
 
-El logo de la cabecera se queda igual (el swoosh completo que
-ya estaba bien). Lo unico que cambia es el favicon: ahora es
-SOLO el monograma "TC" que me pasaste, sin el coche ni el texto.
+1. ANALITICA SIN COOKIES (Plausible)
+   Ahora puedes ver cuanta gente visita la web, que paginas
+   funcionan mejor, y si la gente usa el tasador o pulsa WhatsApp.
+   NO usa cookies, asi que no hace falta banner de consentimiento
+   ni cambiar nada de lo que ya prometia la pagina de cookies.
 
-Sube la web entera igual que las veces anteriores:
+   IMPORTANTE: para ver los datos, tienes que crear una cuenta
+   gratis en https://plausible.io y anadir "tratoclaro.es" como
+   sitio (hay plan gratuito limitado, o de pago desde ~9$/mes para
+   mas historico). Sin esa cuenta, el script esta puesto pero tu
+   no puedes ver las estadisticas todavia.
+
+2. PREGUNTAS FRECUENTES en /servicios-sueltos/
+   5 preguntas nuevas: cita previa, como se paga, varios servicios
+   a la vez, diferencia con la intermediacion completa, y si
+   trabajas fuera de Madrid.
+
+Sube la web entera, mismo procedimiento de siempre:
 1. Descomprime este ZIP
 2. GitHub -> Add file -> Upload files
 3. Entra en la carpeta, Ctrl+A, arrastra todo a GitHub
@@ -14,4 +27,6 @@ Sube la web entera igual que las veces anteriores:
 
 COMPROBAR
 ---------
-tratoclaro.es/img/favicon-32.png -> debe verse SOLO la "TC", nada mas
+tratoclaro.es/servicios-sueltos/ -> baja hasta el final, deben
+  verse 5 preguntas nuevas antes de "Enlaces relacionados"
+tratoclaro.es/cookies/ -> debe mencionar Plausible
